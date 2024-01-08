@@ -1,0 +1,279 @@
+/* Global CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+:root {
+  --bg-light-blue: #e3f1fe;
+  --blue: #b1e7ff;
+  --dark-blue: #1978c5;
+  --btn-yellow: #ffe7a8;
+  --btn-red: #ff9494;
+  --btn-pink: #e7a2ff;
+  --btn-green: #c6ff8e;
+  --btn-blue: #8ab9ff;
+  --light-black: #304046;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* COLORS  */
+.bg-blue {
+  background: var(--btn-blue);
+}
+.bg-light-blue {
+  background-color: var(--bg-light-blue);
+}
+.light-black {
+  background-color: var(--light-black);
+}
+.text-blue {
+  color: var(--dark-blue);
+}
+.btn-yellow{
+  background-color: var(--btn-yellow);
+}
+.btn-yellow-clr{
+  color: var(--btn-yellow);
+}
+.blue{
+  background-color: #8ab9ff;
+}
+
+
+.btn-text {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.small-text{
+  font-size: 10px;
+}
+/* ---Global Css ends Here---  */
+
+/* Navbar starts  */
+
+.shape {
+  background-color: white;
+  position: relative;
+}
+
+.shape::before {
+  position: absolute;
+  content: "";
+  width: 190px;
+  height: 112.5px;
+  background-color: var(--bg-light-blue);
+}
+.shape::before {
+  left: 34%;
+  transform: skew(-37deg);
+}
+
+/* ---NavBar Ends--- */
+
+/* ---SideBar Starts---  */
+
+.user {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.user span {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.user-btn {
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.sidebar {
+  width: 13%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  
+}
+.sidebar-right {
+  width: 5%;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  background-color: var(--bg-light-blue);
+}
+
+.text-smm {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+
+}
+
+
+
+
+
+/* ---SideBar Ends Here---  */
+
+/* Middle Section Starts Here  */
+
+.middle {
+  width: 80%;
+  /* background-color: #c6ff8e; */
+}
+
+.heading p {
+  font-size: 25px;
+  font-weight: 600;
+}
+.h-text{
+  width: 80%;
+}
+.plan-sec {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 20%;
+}
+.monthly {
+  background-color: var(--bg-light-blue);
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding:  2px 10px 2px 10px;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.Annually{
+  width: 50%;
+  text-align: center;
+  font-size: 11px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.card-line::after{
+  content: '';
+  position: absolute;
+  height: 0.1px;
+  opacity: .4px;
+  width: 100%;
+  background-color: #000000;
+  bottom: 0;
+}
+
+/* Hover effects  */
+.btn-hover{
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-hover:hover {
+  background-color: var(--blue);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid #b1e7ff;
+  transform: scale(1.1);
+}
+
+.user{
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.user:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cardHover{
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.cardHover:hover{
+  /* transform: scale(1.1); */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.cardButton{
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.cardButton:hover{
+      background-color: #000000;
+}
+.logout{
+  font-size: 18px;
+  font-weight: 500;
+  color: #106ab4;
+  transition: transform 0.3s ease, color 0.3s ease,background-color 0.3s ease , border 0.3s ease;
+  border: 1px solid white;
+}
+.logout:hover{
+  background-color: var(--dark-blue);
+
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid  var(--dark-blue);
+  /* transform: scale(1.1); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add these styles for responsive behavior */
+.sidebar {
+  height: 100vh;
+  transition: all 0.3s ease;
+  padding-bottom: 1rem;
+}
+
+.sidebar-open {
+  width: 13%;
+}
+
+.sidebar-closed {
+  width: 80px; 
+}
+
+@media (max-width: 768px) {
+  .sidebar-open,
+  .sidebar-closed {
+    width: 50px; /* Adjust the width for smaller screens */
+  }
+}
+
+.slider-container {
+  width: 100%; /* Adjust the width as needed */
+  overflow: hidden; /* Hide the slider when it's too wide */
+}
+
+.slider {
+  /* Your slider styles go here */
+  display: flex; /* Assuming a horizontal slider layout */
+  transition: transform 0.3s ease; /* Smooth transition when hiding/showing */
+}
+
+/* Media query for screens with a width of 1000px or less */
+@media (max-width: 1000px) {
+  .slider-container {
+    display: none; /* Hide the slider container */
+  }
+}
